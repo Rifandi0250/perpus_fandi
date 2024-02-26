@@ -25,25 +25,18 @@ if (isset($_POST["search"])) {
   $buku = search($_POST["keyword"]);
 }
 //read buku informatika
-if (isset($_POST["informatika"])) {
-  $buku = queryReadData("SELECT * FROM buku WHERE kategori = 'informatika'");
+if (isset($_POST["Dongeng"])) {
+  $buku = queryReadData("SELECT * FROM buku WHERE kategori = 'Dongeng'");
 }
 //read buku bisnis
-if (isset($_POST["bisnis"])) {
-  $buku = queryReadData("SELECT * FROM buku WHERE kategori = 'bisnis'");
+if (isset($_POST["Komik"])) {
+  $buku = queryReadData("SELECT * FROM buku WHERE kategori = 'Komik'");
 }
 //read buku filsafat
-if (isset($_POST["filsafat"])) {
-  $buku = queryReadData("SELECT * FROM buku WHERE kategori = 'filsafat'");
+if (isset($_POST["Novel"])) {
+  $buku = queryReadData("SELECT * FROM buku WHERE kategori = 'Novel'");
 }
-//read buku novel
-if (isset($_POST["novel"])) {
-  $buku = queryReadData("SELECT * FROM buku WHERE kategori = 'novel'");
-}
-//read buku sains
-if (isset($_POST["sains"])) {
-  $buku = queryReadData("SELECT * FROM buku WHERE kategori = 'sains'");
-}
+?>
 ?>
 
 <head>
