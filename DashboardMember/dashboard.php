@@ -37,7 +37,6 @@ if (isset($_POST["Novel"])) {
   $buku = queryReadData("SELECT * FROM buku WHERE kategori = 'Novel'");
 }
 ?>
-?>
 
 <head>
   <meta charset="utf-8">
